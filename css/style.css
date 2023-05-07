@@ -4,12 +4,13 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
     
 .main_screen{
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -108,8 +109,9 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    margin: 0 auto;
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: calc(10px + 60 * (100vw / 1280));
 }
 
 .advantages_cart{
@@ -134,6 +136,69 @@ body{
     color:#2D154A;
     line-height: 22px;
 }
+
+.bg_get_consult{
+    width: 100vw;
+    height: 75vh;
+    background-image: url(../img/second_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 100px;
+    padding-top: 70px;
+}
+
+.title_get_consult{
+    font-size: calc(15px + 21 * (100vw / 1280));
+    font-weight: bold;
+    color: white;
+    max-width: 850px;
+    margin-bottom: calc(12px + 18 * (100vw / 1280));
+    line-height: calc(25px + 25 * (100vw / 1280));
+}
+
+.discription_get_consult{
+    font-size: calc(14px + 6 * (100vw / 1280));
+    font-weight: 400;
+    color: white;
+    max-width: 420px;
+    margin-bottom: 30px;
+    line-height: calc(20px + 15 * (100vw / 1280));;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+}
+
+.input{
+    width: calc(250px + 50 * (100vw / 1280));
+    height: calc(40px + 20 * (100vw / 1280));
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.get_consult{
+    width: calc(250px + 50 * (100vw / 1280));
+    height: calc(40px + 20 * (100vw / 1280));
+    font-size: calc(12px + 4 * (100vw / 1280));
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+button{
+    border: none;
+}
+
+
+
 
 
 @media screen and (max-width: 1200px){
