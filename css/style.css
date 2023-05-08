@@ -60,7 +60,25 @@ body{
     font-size: calc(6px + 10 * (100vw / 1280));
 }
 
+.carousel_inner{
+    width: 370px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.blur{
+    width: 330px;
+    height: 400px;
+    margin-right: 80px;
+    margin-top: 60px;
+    border-radius: 65px;
+}
+
 .ofer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: auto;
     height: auto;
 }
@@ -71,8 +89,7 @@ body{
     align-items: start;
     flex-direction: column;
     width: auto;
-    height: calc(210px + 50 * (100vw / 1280));
-    margin-top: 50px;
+    height: calc(210px + 100 * (100vw / 1280));
 }
 
 .ofer_title{
@@ -86,8 +103,9 @@ body{
     color: white;
     font-size: calc(16px + 8 * (100vw / 1280));
     font-weight: 400;
-    line-height: 30px;
+    line-height: 45px;
     margin-bottom: 10px;
+    max-width: 370px;
 }
 
 .button_ofer{
@@ -205,6 +223,12 @@ button{
     .advantages_cart{
         width: calc(170px + 50 * (100vw / 1280));
         height: calc(240px - 20 * (100vw / 1280));
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .carousel_inner{
+        display: none;
     }
 }
 
