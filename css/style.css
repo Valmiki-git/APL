@@ -252,13 +252,17 @@ ul{
 }
 
 .carts_iphone{
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items:center;
 
     width: auto;
     height: auto;
     margin-bottom: 200px;
+}
+
+.carts_iphone.carts_active{
+    display: flex;
 }
 
 .cart_iphone{
@@ -302,6 +306,7 @@ ul{
     width: 280px;
     height: auto;
     margin-top: 25px;
+    
 }
 
 .price_iphone{
