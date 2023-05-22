@@ -219,20 +219,26 @@ ul{
     list-style: none;
 }
 
+ul, li, div { margin: 0; padding: 0;}
+
 .tabs{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-top: 50px;
     margin-bottom: 70px;
 }
 
 .tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 220px;
     height: 50px;
     border: solid #D0D0D0 2px;
     text-align: center;
-    line-height: 50px;
     transform: skewX(-25deg);
     cursor: pointer;
     transition: 0.5s all;
@@ -322,15 +328,22 @@ ul{
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 500;
-
 }
-
-
 
 @media screen and (max-width: 1200px){
     .advantages_cart{
         width: calc(170px + 50 * (100vw / 1280));
         height: calc(240px - 20 * (100vw / 1280));
+    }
+
+    .carts_iphone{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        
+    }
+
+    .cart_iphone{
+        margin-bottom: 100px;
     }
 }
 
@@ -359,5 +372,37 @@ ul{
 
     .logo_desctop{
         display: none;
+    }
+
+    .cart_iphone{
+        width: calc(260px + 80 * (100vw / 1280));
+    }
+
+    .price_button_iphone{
+        width: calc(210px + 70 * (100vw / 1280));  
+    }
+
+    .price_iphone{
+        font-size: calc(16px + 9 * (100vw / 1280));  
+    }
+    
+    .button._iphone{
+        width: calc(100px + 20 * (100vw / 1280));  
+        height: calc(30px + 10 * (100vw / 1280));  
+        font-size: calc(12px + 5 * (100vw / 1280));  
+    }
+
+    .cart_iphone{
+        margin-bottom: 50px;
+    }
+
+    .tab{
+        width: calc(20px + 200 * (100vw / 1280));  
+        height: calc(15px + 25 * (100vw / 1280));  
+        margin: 0 2px;
+        font-size: 1px;
+        text-align: center;
+        text-transform: none;
+     
     }
 }
